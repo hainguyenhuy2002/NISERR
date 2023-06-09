@@ -11,7 +11,7 @@ import pickle
 import time
 from utils import build_graph, Data, split_validation
 from model import *
-torch.cuda.set_device(1)
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 parser = argparse.ArgumentParser()
 parser.add_argument('--dataset', default='diginetica', help='dataset name: diginetica/yoochoose1_4/yoochoose1_64/sample')
 parser.add_argument('--batchSize', type=int, default=50, help='input batch size')
