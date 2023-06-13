@@ -53,7 +53,7 @@ def main():
     elif opt.dataset == 'withoutactionnot12':
         n_node = 84509
         
-    elif opt.dataset =='largerthan7'
+    elif opt.dataset =='largerthan7':
         n_node = 43610
     else:
         n_node = 110631
