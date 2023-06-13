@@ -53,6 +53,9 @@ def main():
     elif opt.dataset =='/kaggle/input/userbrowsing234':
         n_node = 12012
     
+    elif opt.dataset =='/kaggle/input/userbrowsing234nocut':
+        n_node = 13432
+    
 
     model = trans_to_cuda(SessionGraph(opt, n_node))
 
