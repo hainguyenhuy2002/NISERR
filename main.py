@@ -55,7 +55,7 @@ def main():
         
     elif opt.dataset =='/kaggle/input/largerthan7':
         n_node = 43610
-    else:
+    elif opt.dataset =='/kaggle/input/withoumappingaction':
         n_node = 110631
 
     model = trans_to_cuda(SessionGraph(opt, n_node))
